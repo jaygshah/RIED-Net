@@ -22,13 +22,38 @@ Yuxiang Zhou<sup>4</sup>,
 <sup>5</sup>Mallinckrodt Inst. of Radiology, Washington University
 
 ---
+Multiple positron emission tomography (PET) tracers are available for amyloid imaging, posing a significant challenge to consensus interpretation and quantitative analysis in Alzheimer's disease research. We accordingly developed and validated a deep learning model as a harmonization strategy. Learn more about its practical applications in ASU's blog post: [Using AI to battle Alzheimer's.](https://news.asu.edu/20220315-solutions-using-ai-battle-alzheimers-asu-researchers-banner-health-team-up)
 
-Visual comparison of synthetic images generated using RIED-Net to real Pittsburgh Compound-B (PIB) data for the OASIS ( A &amp; B) and GAAIN (C &amp; D) datasets
-![RIED results](imgs/ried_results.jpg)
+<p align="center">
+<img src="imgs/ried_results.jpg" width=62% height=62% 
+class="center">
+</p>
+Visual comparison of synthetic images generated using RIED-Net to real Pittsburgh Compound-B (PIB) data for the OASIS (A &amp; B) and GAAIN (C &amp; D) datasets
+
+## Installation
+Instructions to install MONAI can be found [here](https://docs.monai.io/en/stable/installation.html) and the appropriate version of Pytorch using locally](https://docs.monai.io/en/stable/installation.html).
+Packages used in the current version of this code.
+```
+monai==1.3.0
+torch==2.1.0+cu118
+torchaudio==2.1.0+cu118
+torchmetrics==1.2.0
+torchvision==0.16.0+cu118
+```
+
+## Training 
+```
+python train.py --dataset trainfold1 --batch_size 3 --model_name resunet
+```
+
+## Evaluation
+```
+python generate.py --dataset testfold1 --model_name resunet
+```
 
 ## Citation
 
-Please consider citing FasterViT if this repository is useful for your work. 
+Please consider citing RIED-Net if this repository is useful for your work. 
 
 ```
 @article{shah2022deep,
