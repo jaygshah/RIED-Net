@@ -6,26 +6,12 @@ root_dir = '/data/amciilab/jay/datasets/ried/'
 
 oasis_av45s = np.asarray(sorted(glob.glob(os.path.join(root_dir, "OASIS-CAPIIO/*_AV45SUVR_on_CAPIIO.nii"))))
 oasis_pibs = np.asarray(sorted(glob.glob(os.path.join(root_dir, "OASIS-CAPIIO/*_PIBSUVR_on_CAPIIO.nii"))))
-# cent_av45s = np.asarray(sorted(glob.glob(os.path.join(root_dir, "Centiloid_CAPIIO/*_AV45SUVR_on_CAPIIO.nii"))))
-# cent_pibs = np.asarray(sorted(glob.glob(os.path.join(root_dir, "Centiloid_CAPIIO/*_PIBSUVR_on_CAPIIO.nii"))))
-
-# av45s = np.concatenate((oasis_av45s, cent_av45s), axis=0)
-# pibs = np.concatenate((oasis_pibs, cent_pibs), axis=0)
-
-av45s = oasis_av45s
-pibs = oasis_pibs
-
-# with open("paired.csv", "w") as paired:
-#     writer = csv.writer(paired)
-#     writer.writerow(["AV45", "PIB"])
-#     for x, y in zip(av45s, pibs):
-#         writer.writerow([x, y])
 
 kf = KFold(n_splits=10)
 counter = 0
-for train_index, val_index in kf.split(av45s):
+for train_index, val_index in kf.split(oasis_av45s):
     counter += 1
-    # print("TRAIN:", train_index, "VAL:", val_index)
+    
     X_train, X_val = av45s[train_index], av45s[val_index]
     y_train, y_val = pibs[train_index], pibs[val_index]
 
