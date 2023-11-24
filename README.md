@@ -21,5 +21,24 @@ Yuxiang Zhou<sup>4</sup>,
 <sup>4</sup>Dept of Radiology, Mayo Clinic, Arizona,
 <sup>5</sup>Mallinckrodt Inst. of Radiology, Washington University
 
+---
+
 Visual comparison of synthetic images generated using RIED-Net to real Pittsburgh Compound-B (PIB) data for the OASIS ( A &amp; B) and GAAIN (C &amp; D) datasets
 ![RIED results](imgs/ried_results.jpg)
+
+## Citation
+
+Please consider citing FasterViT if this repository is useful for your work. 
+
+```
+@article{shah2022deep,
+  title={Deep residual inception encoder-decoder network for amyloid PET harmonization},
+  author={Shah, Jay and Gao, Fei and Li, Baoxin and Ghisays, Valentina and Luo, Ji and Chen, Yinghua and Lee, Wendy and Zhou, Yuxiang and Benzinger, Tammie LS and Reiman, Eric M and others},
+  journal={Alzheimer's \& Dementia},
+  volume={18},
+  number={12},
+  pages={2448--2457},
+  year={2022},
+  publisher={Wiley Online Library}
+}
+```
