@@ -40,6 +40,25 @@ torchaudio==2.1.0+cu118
 torchmetrics==1.2.0
 torchvision==0.16.0+cu118
 ```
+## Dataset
+You should structure your aligned dataset in the following way:
+```
+trainfold/
+  ├── train
+    ├──images
+      ├──xxx.nii
+      ├──...
+    ├──targets
+      ├──yyy.nii
+      ├──...
+  ├── val
+    ├──images
+      ├──xxx.nii
+      ├──...
+    ├──targets
+      ├──yyy.nii
+      ├──...
+```
 
 ## Training 
 ```
@@ -47,6 +66,7 @@ python train.py --dataset trainfold1 --batch_size 3 --model_name resunet
 ```
 
 ## Evaluation
+`testfold` should have same structure as `trainfold`. Checkout `prepare_data.py` to prepare the data folds.
 ```
 python generate.py --dataset testfold1 --model_name resunet
 ```
@@ -67,3 +87,5 @@ Please consider citing RIED-Net if this repository is useful for your work.
   publisher={Wiley Online Library}
 }
 ```
+
+## Acknowledgments
