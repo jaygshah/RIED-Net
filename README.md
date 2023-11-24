@@ -15,8 +15,8 @@ Yuxiang Zhou<sup>4</sup>,
 [Yi Su](https://scholar.google.com/citations?user=vdZKSEIAAAAJ&hl=en)<sup>1,2,3</sup>,
 [Teresa Wu](https://labs.engineering.asu.edu/wulab/person/teresa-wu-2/)<sup>1,2</sup>
 
-<sup>1</sup>ASU-Mayo Center for Innovative Imaging, Arizona State University,
-<sup>2</sup>School of Computing and Augmented Intelligence, Arizona State University,
+<sup>1</sup>ASU-Mayo Center for Innovative Imaging,
+<sup>2</sup>Arizona State University,
 <sup>3</sup>Banner Alzheimer’s Institute,
-<sup>4</sup>Department of Radiology, Mayo Clinic in Arizona,
-<sup>5</sup>Mallinckrodt Institute of Radiology, Washington University School of Medicine in St. Louis
+<sup>4</sup>Dept of Radiology, Mayo Clinic, Arizona,
+<sup>5</sup>Mallinckrodt Inst. of Radiology, Washington University
