@@ -31,7 +31,7 @@ class="center">
 Visual comparison of synthetic images generated using RIED-Net to real Pittsburgh Compound-B (PIB) data for the OASIS (A &amp; B) and GAAIN (C &amp; D) datasets
 
 ## Installation
-Instructions to install MONAI can be found [here](https://docs.monai.io/en/stable/installation.html) and the appropriate version of Pytorch using locally](https://docs.monai.io/en/stable/installation.html).
+Instructions to install MONAI can be found [here](https://docs.monai.io/en/stable/installation.html) and the appropriate version of Pytorch using [locally](https://docs.monai.io/en/stable/installation.html).
 Packages used in the current version of this code.
 ```
 monai==1.3.0
