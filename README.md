@@ -64,17 +64,13 @@ trainfold/
 ```
 python train.py --dataset trainfold1 --batch_size 3 --model_name resunet
 ```
-
 ## Evaluation
 `testfold` should have same structure as `trainfold`. Checkout `prepare_data.py` to prepare the data folds.
 ```
 python generate.py --dataset testfold1 --model_name resunet
 ```
-
 ## Citation
-
 Please consider citing RIED-Net if this repository is useful for your work. 
-
 ```
 @article{shah2022deep,
   title={Deep residual inception encoder-decoder network for amyloid PET harmonization},
@@ -87,5 +83,5 @@ Please consider citing RIED-Net if this repository is useful for your work.
   publisher={Wiley Online Library}
 }
 ```
-
 ## Acknowledgments
+This research has been supported partially by NIH grants R01AG031581, R01AG069453, P30AG019610, and Arizona Department of Health Services (ADHS) and the State of Arizona, ADHS Grant No. CTR040636. This is a [patent-pending](https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2023101959&_cid=P21-LPD5OU-06483-1) technology.
