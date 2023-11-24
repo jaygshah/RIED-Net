@@ -39,7 +39,6 @@ def train(model, dataset, criterion, opt, epoch, device):
                 all_b.append(b)
         
         x, y = torch.stack(all_a), torch.stack(all_b)
-        # print(x.shape, y.shape)
 
         x = x.to(device)
         y = y.to(device)
