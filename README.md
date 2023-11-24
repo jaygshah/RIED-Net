@@ -21,4 +21,5 @@ Yuxiang Zhou<sup>4</sup>,
 <sup>4</sup>Dept of Radiology, Mayo Clinic, Arizona,
 <sup>5</sup>Mallinckrodt Inst. of Radiology, Washington University
 
-![Visual comparison of synthetic images generated using RIED-Net to real Pittsburgh Compound-B (PIB) data for the OASIS ( A &amp; B) and GAAIN (C &amp; D) datasets](imgs/ried_results.jpg)
+Visual comparison of synthetic images generated using RIED-Net to real Pittsburgh Compound-B (PIB) data for the OASIS ( A &amp; B) and GAAIN (C &amp; D) datasets
+![RIED results](imgs/ried_results.jpg)
