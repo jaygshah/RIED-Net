@@ -2,7 +2,7 @@ import glob, os, shutil, nibabel, csv
 import numpy as np
 from sklearn.model_selection import KFold
 
-root_dir = '/data/amciilab/jay/datasets/ried/'
+root_dir = '/path_to_dataset/'
 
 oasis_av45s = np.asarray(sorted(glob.glob(os.path.join(root_dir, "OASIS-CAPIIO/*_AV45SUVR_on_CAPIIO.nii"))))
 oasis_pibs = np.asarray(sorted(glob.glob(os.path.join(root_dir, "OASIS-CAPIIO/*_PIBSUVR_on_CAPIIO.nii"))))
